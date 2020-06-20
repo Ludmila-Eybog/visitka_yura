@@ -1,0 +1,265 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px;
+  height: 100%;
+  background-color: rgba(105, 240, 175, 0.514);
+  background-image: url('../img/panz.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Montserrat';
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(10, 4, 4, 0.7);
+  z-index: 1;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px 20px;
+  max-width: 300px;
+  height: 150px;
+  background-color: #4b5547;
+  /* background: linear-gradient(to right, blue, pink); */
+  background: linear-gradient(to right, rgba(49, 65, 42, 1), 40%, rgba(198, 189, 130, 0.6));
+  z-index: 2;
+}
+
+@media (min-width: 568px) {
+  .card {
+    padding: 25px 30px;
+    max-width: 508px;
+    height: 270px;
+    background: linear-gradient(to right, rgba(49, 65, 42, 1), 40%, rgba(198, 189, 130, 0.2));
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 35px;
+    max-width: 600px;
+    height: 300px;
+    background: linear-gradient(to right, rgba(49, 65, 42, 0.8), 40%, rgba(198, 189, 130, 0.6));
+  }
+}
+
+.photo-wrapper {
+  margin-right: 20px;
+  width: 100px;
+  height: 100%;
+
+  background-color: #8c9868;
+  background-image: url(../img/yura-photo_2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 568px) {
+  .photo-wrapper {
+    margin-right: 30px;
+    width: 200px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .photo-wrapper {
+    margin-right: 35px;
+  }
+}
+
+.content {
+  width: 185px;
+  height: 100%;
+}
+
+@media (min-width: 568px) {
+  .content {
+    width: 278px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 365px;
+  }
+}
+
+.spec {
+  /* display: inline-block; */
+  margin-bottom: 7px;
+  padding: 0px 8px;
+  width: max-content;
+  font-size: 10px;
+
+  background-color: #c3ba7f;
+}
+
+@media (min-width: 568px) {
+  .spec {
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .spec {
+    padding: 5px 10px;
+    font-size: 20px;
+  }
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 0.9;
+}
+
+@media (min-width: 568px) {
+  h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+span {
+  font-size: 14px;
+}
+
+@media (min-width: 568px) {
+  span {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  span {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 6px;
+  font-size: 9px;
+  font-weight: 700;
+  color: #EB722E;
+}
+
+@media (min-width: 568px) {
+  h2 {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 17px;
+  }
+}
+
+.text {
+  display: flex;
+  margin: 5px;
+  font-size: 8px;
+  color: #fff;
+}
+
+@media (min-width: 568px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+.text1 {
+  margin-right: 25px;
+  width: 50px;
+  font-weight: 600;
+}
+
+@media (min-width: 568px) {
+  .text1 {
+    margin-right: 50px;
+    width: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .text1 {
+    width: 80px;
+  }
+}
+
+.sozial-vk {
+  display: flex;
+  width: max-content;
+  margin-top: 7px;
+  text-decoration: none;
+}
+
+@media (min-width: 568px) {
+  .sozial-vk {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sozial-vk {
+    margin-top: 10px;
+  }
+}
+
+.sozial-vk:hover {
+  box-shadow: 10px 5px 10px 5px rgba(49, 65, 42, 0.6);
+  /* background-color: #eb9c6e; */
+}
+
+.sozial-vk svg {
+  height: 14px;
+}
+
+@media (min-width: 568px) {
+  .sozial-vk svg {
+    height: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sozial-vk svg {
+    height: 32px;
+  }
+}
